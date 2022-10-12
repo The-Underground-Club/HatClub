@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hat Club</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ec063ae641.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-secondary d-flex flex-column min-vh-100">
+    {% include 'navbar.html' %}
+
+    <main class="container text-center rounded flex-shrink-0 my-5">
+      <!-- Cards -->
+      <div class="row g-5 justify-content-center mb-5">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card col">
+            <div class="card-header">
+              <i class="fa-solid fa-check-to-slot fs-1"></i>
+            </div>
+            <div class="card-body">
+              <h3>Checklist</h3>
+              <a href="https://checklist.hatclub.dev" class="btn btn-warning">
+                <i class="fa-solid fa-rocket"></i> Launch App
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card col">
+            <div class="card-header">
+              <i class="fa-solid fa-headset fs-1"></i>
+            </div>
+            <div class="card-body">
+              <h3>Chat Client</h3>
+              <a
+                href="https://github.com/The-Underground-Club/Python-Projects/tree/main/TCP-chat"
+                class="btn btn-warning"
+              >
+                <i class="fa-solid fa-rocket"></i> Launch App
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card col">
+            <div class="card-header">
+              <i class="fa-solid fa-file-invoice-dollar fs-1"></i>
+            </div>
+            <div class="card-body">
+              <h3>Invoice App</h3>
+              <a class="btn btn-warning">
+                <i class="fa-solid fa-rocket"></i> Launch App
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <!-- About -->
+      <blockquote class="container blockquote p-5 bg-light mt-5">
+        <i class="fa-solid fa-quote-right fs-3 mb-5"></i>
+        <p>
+          Welcome to my personal project Hat Club. I&#39;ve been keeping up with
+          this since 2018, and every time I learn something new, I post here.
+          Over the years, this website has been overhauled many times, as I know
+          there is always something I can make faster or better. Every overhaul,
+          I apply a new feature I didn&#39;t have in the last: including the
+          navbar, the app cards, this about hero, a footer, content, and soon to
+          be more. Creating this website pushed me to learn new skills, and to
+          make it look cleaner. I mainly do this, so I can inspire someone,
+          someday, to learn that coding isn&#39;t hard to pick up, and that they
+          can create their next dream project.
+        </p>
+        <span class="blockquote-footer">Tanner Smiley</span>
+      </blockquote>
+    </main>
+
+    {% include 'footer.html' %}
+  </body>
+</html>
