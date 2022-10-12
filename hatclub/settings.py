@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-%o7@(&)au(lejm4j-t-)9-=x2*nt5w38&a%9qo3v#a&+#b5(8w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -62,12 +62,7 @@ WSGI_APPLICATION = 'hatclub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = {}
 
 
 # Password validation

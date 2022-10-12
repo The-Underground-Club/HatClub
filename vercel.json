@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "hatclub/wsgi.py",
+        "use": "@ardnt/hatclub-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "hatclub/wsgi.py"
+        }
+    ]
+}
