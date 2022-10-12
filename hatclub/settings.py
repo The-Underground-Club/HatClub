@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from pathlib import Path
 import django_on_heroku
 
@@ -9,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-%o7@(&)au(lejm4j-t-)9-=x2*nt5w38&a%9qo3v#a&+#b5(8w'
+load_dotenv()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
