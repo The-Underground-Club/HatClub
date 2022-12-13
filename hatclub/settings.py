@@ -14,7 +14,7 @@ SECRET_KEY = load_dotenv()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zeldasman.pythonanywhere.com']
 
 
 # Application definition
